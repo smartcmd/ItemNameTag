@@ -1,56 +1,65 @@
-# Allay Java Plugin Template
+# 🏷️ ItemNameTag
 
-Welcome to the java plugin template for allay.
+[![AllayMC](https://img.shields.io/badge/AllayMC-Plugin-blue)](https://github.com/AllayMC/Allay)
+[![Java](https://img.shields.io/badge/Java-21+-orange)](https://www.oracle.com/java/)
 
-## Prerequisites
+> 🎮 Make dropped item nametags visible!
 
-- Java21 or higher.
-- Allay installed.
+## ✨ Features
 
-## Getting Started
+- 🔖 Automatically displays nametags for dropped items on the ground
+- 📝 Display format: `Item Name §ax Count`
+- 💚 Count portion displayed in green for clear visibility
+- 🔧 Supports items with custom names
 
-1. **Clone this Repository**
+## 📦 Installation
 
-```bash
-git clone https://github.com/AllayMC/JavaPluginTemplate.git
-```
-   
-2. **Navigate to the Cloned Directory**
+1. 📥 Download the latest `.jar` file from [Releases](https://github.com/smartcmd/ItemNameTag/releases)
+2. 📁 Place the `.jar` file into your server's `plugins` directory
+3. 🔄 Restart the server
 
-```bash
-cd JavaPluginTemplate
-```
-   
-3. **Change Plugin Information**
-
-- Rename package name from `org.allaymc.javaplugintemplate` to `your.group.name.and.pluginname`
-- Update [build.gradle.kts](build.gradle.kts) and [settings.gradle.kts](settings.gradle.kts)
-- Reload gradle
-   
-4. **Build and Run Your Plugin**
+## 🛠️ Building from Source
 
 ```bash
-gradlew shadowJar
-```
-   
-This command will produce a `.jar` file in the `build/libs` directory. 
-Copy the `.jar` file to the `plugins` directory of your allay server.
-Start the allay server and check the logs to ensure your plugin loads and operates
-as expected.
+# Clone the repository
+git clone https://github.com/smartcmd/ItemNameTag.git
 
-5. **Test Your Plugin in Gradle**
+# Navigate to project directory
+cd ItemNameTag
 
-```bash
-gradlew runServer
+# Build the plugin
+./gradlew shadowJar
 ```
 
-This command will start an allay server with your plugin loaded.
-Then close allay server by clicking `X` in the dashboard window.
+After building, find the generated jar file in the `build/libs` directory.
 
-## Documentation
+## 📋 Requirements
 
-For a deeper dive into the Allay API and its functionalities, please refer to our [documentation](https://docs.allaymc.org) (WIP).
+- ☕ Java 21 or higher
+- 🖥️ AllayMC Server 0.21.0+
 
-## License
+## 🎯 Preview
+
+Dropped items will display nametags in the following format:
+
+```
+Diamond §ax64
+```
+
+The `x64` portion will be displayed in green.
+
+## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+Issues and Pull Requests are welcome!
+
+## 👨‍💻 Author
+
+- **daoge_cmd** - [GitHub](https://github.com/smartcmd)
+
+---
+
+⭐ If you find this plugin helpful, please give it a Star!
